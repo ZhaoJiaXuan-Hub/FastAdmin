@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      title: 'EasyAdmin',
+      title: 'FastAdmin',
       logo: require('@/assets/logo.svg')
     }
   }
