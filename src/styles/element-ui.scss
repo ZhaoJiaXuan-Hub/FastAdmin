@@ -1,0 +1,172 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  padding: 0;
+  a {
+    display: block
+  }
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
+
+
+.card-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.el-card__header {
+  padding: 15px 17px !important;
+}
+
+.analysis-chart-card-num {
+  font-size: 30px;
+}
+
+.analysis-chart-card-content {
+  height: 45px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.el-divider--horizontal {
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.ele-text {
+  color: var(--color-text-regular)
+}
+
+.ele-text-heading {
+  color: var(--color-text-primary)
+}
+
+.ele-text-secondary {
+  color: var(--color-text-secondary)
+}
+
+.ele-text-placeholder {
+  color: var(--color-text-placeholder)
+}
+
+.ele-text-primary {
+  color: var(--color-primary)
+}
+
+.ele-text-success {
+  color: var(--color-success)
+}
+
+.ele-text-warning {
+  color: var(--color-warning)
+}
+
+.ele-text-danger {
+  color: var(--color-danger)
+}
+
+.ele-text-info {
+  color: var(--color-info)
+}
+
+.el-button+.el-dropdown, .el-button+.el-link, .el-button+.ele-action, .el-dropdown+.el-button, .el-dropdown+.el-dropdown, .el-dropdown+.el-link, .el-dropdown+.ele-action, .el-link+.el-button, .el-link+.el-dropdown, .el-link+.el-link, .el-link+.ele-action, .el-tag+.el-tag, .ele-action+.el-button, .ele-action+.el-dropdown, .ele-action+.el-link, .ele-action+.ele-action {
+  margin-left: 10px;
+}
+
+.analysis-chart-card-text {
+  padding-top: 5px;
+  font-size: 14px;
+}
+
+.el-divider {
+  background-color: #ededed;
+  position: relative;
+}
+
+.diy-box-card{
+  & .el-card__body{
+    padding: 0 !important;
+  }
+  & .el-tabs__header{
+    margin: 0;
+  }
+  & .el-tabs__nav-wrap{
+    padding: 0 15px;
+  }
+
+  & .el-tabs__content{
+    padding: 20px;
+  }
+}
+.el-tabs__item:hover {
+  color: $subMenuActiveText !important;
+  cursor: pointer;
+}
+
+.el-tabs__item.is-active{
+  color: $subMenuActiveText !important;
+}
+
+.el-tabs__nav-wrap::after {
+  height: 1px;
+  z-index: 1;
+}
+
+.el-tabs__active-bar{
+  background-color: $subMenuActiveText !important;
+}
+
+.el-tabs__item {
+  height: 50px;
+  line-height: 50px;
+}
+
+.el-pagination {
+  font-weight: 400;
+  white-space: normal;
+}
